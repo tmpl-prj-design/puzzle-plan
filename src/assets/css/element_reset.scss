@@ -1,0 +1,40 @@
+// element-plus 样式覆盖
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'primary': (
+      'base': #409eff
+    )
+  ),
+  $font-size: (
+    'base': 12px
+  ),
+  $link: (
+    'font-weight': 400
+  ),
+  $menu: (
+    'item-height': 44px,
+    'item-font-size': 13px,
+    'border-color': transparent
+  ),
+  $table: (
+    'header-text-color': #303133,
+    'tr-bg-color': #f5f6f7,
+    'row-hover-bg-color': #eaeaf0
+  ),
+  $pagination: (
+    'font-size': 12px,
+    'button-height': 28px
+  ),
+  $card: (
+    'padding': 16px 24px
+  ),
+  $radio-button: (
+    'checked-bg-color': #409eff,
+    'checked-text-color': #606266,
+    'checked-border-color': #409eff
+  ),
+  $popover: (
+    'title-font-size': 14px
+  )
+);
+@use 'element-plus/theme-chalk/src/index.scss' as *;

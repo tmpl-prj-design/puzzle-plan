@@ -1,0 +1,79 @@
+* {
+  word-wrap: break-word;
+  word-break: break-word;
+  letter-spacing: 0.5px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+body {
+  min-width: 1140px;
+  font-family: -apple-system, 'PingFang SC', 'Hiragino Sans GB', Roboto, Arial, 'Microsoft YaHei', sans-serif;
+  font-size: 14px;
+  color: #606366;
+  background: #f5f6f7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  color: #191a1b;
+}
+
+h1 {
+  line-height: 47px;
+  font-size: 34px;
+}
+
+h2 {
+  line-height: 32px;
+  font-size: 32px;
+}
+
+h3 {
+  line-height: 28px;
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+p {
+  font-size: 12px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}

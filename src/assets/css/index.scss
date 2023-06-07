@@ -1,0 +1,29 @@
+@import './reset.scss';
+@import './element_reset.scss';
+@import 'highlight.js/styles/github.css';
+@import './hljs.scss';
+
+#app {
+  height: 100%;
+}
+
+// COPY
+.g-copy-dom {
+  position: relative;
+}
+.animate__animated.g-copied-tip {
+  z-index: 10000;
+  position: absolute;
+  right: 8px;
+  top: 100%;
+  margin-top: 8px;
+  background: #f5f6f7;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 22px;
+  padding: 2px 8px;
+  color: #273efa;
+}
+.animate__animated.animate__fadeOut {
+  --animate-duration: 1.2s;
+}
