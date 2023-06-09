@@ -1,7 +1,7 @@
 import { ref } from 'vue'
 import { defineStore } from 'pinia'
 import { storage } from '@/utils/storage'
-import { getDefaultLang } from '@/utils/broswer'
+import { getDefaultLang } from '@/intl/lang.js'
 
 /**
  * 语言信息存储
