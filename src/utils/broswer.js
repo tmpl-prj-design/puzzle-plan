@@ -1,18 +1,3 @@
-import navigatorLanguages from 'navigator-languages'
-import { storage } from './storage'
-
-/**
- * 获取默认语言
- * localStorage > broswer > 'zh'
- * zh 回退语言
- * @returns {string} 默认语言
- */
-export function getDefaultLang() {
-  const broswerLangs = navigatorLanguages() || ['zh']
-  const broswerLang = broswerLangs[0].split('-')[0].toLowerCase()
-  return storage.get('lang') || broswerLang
-}
-
 /**
  * 判断是不是IE浏览器
  */

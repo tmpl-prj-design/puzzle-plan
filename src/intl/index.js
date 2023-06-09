@@ -1,18 +1,13 @@
 import { createI18n } from 'vue-i18n'
-import { getDefaultLang } from '@/utils/broswer'
-
-import en from './en'
-import zh from './zh'
+import { ProductLangs } from './lang'
+import { store } from '@/stores/lang'
 
 const i18n = createI18n({
   legacy: false, // 使用组合API需要
   allowComposition: true,
-  locale: getDefaultLang(),
+  locale: store.lang,
   fallbackLocale: 'zh',
-  messages: {
-    zh,
-    en
-  }
+  messages: ProductLangs
 })
 
 export default i18n

@@ -1,5 +1,5 @@
 <template>
-  <el-config-provider :locale="ElementLang[langStore.lang]">
+  <el-config-provider :locale="ElementLangs[langStore.lang]">
     <router-view v-if="isActiveRouter" />
   </el-config-provider>
 </template>
@@ -8,7 +8,7 @@ import { ref, nextTick, watch } from 'vue'
 import { ElConfigProvider } from 'element-plus'
 import { useI18n } from 'vue-i18n'
 
-import { ElementLang } from '@/intl/elementLang'
+import { ElementLangs } from '@/intl/lang'
 import { useLangStore } from '@/stores/lang'
 
 const langStore = useLangStore()
