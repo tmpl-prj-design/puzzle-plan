@@ -9,7 +9,7 @@ import { useLangStore } from '@/stores/lang'
 import { storage } from '@/utils/storage'
 
 // 基础配置
-const BASEURL = '/mdb/api/v1'
+const BASEURL = '/product/api/v1'
 const Code = {
   LoginError: [1, 2, 3] // 登录时效
   // ... others

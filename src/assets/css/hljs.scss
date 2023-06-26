@@ -9,14 +9,3 @@ pre {
   color: #2f3337;
   font-size: 12px;
 }
-
-// hljs 红色 -> 改蓝色主题
-.hljs-doctag,
-.hljs-keyword,
-.hljs-meta .hljs-keyword,
-.hljs-template-tag,
-.hljs-template-variable,
-.hljs-type,
-.hljs-variable.language_ {
-  color: blue !important;
-}

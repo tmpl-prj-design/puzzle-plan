@@ -1,3 +1,5 @@
+import { storage } from '@/utils/storage'
+
 import E_ZH from 'element-plus/lib/locale/lang/zh-cn'
 import E_EN from 'element-plus/lib/locale/lang/en'
 
@@ -35,5 +37,6 @@ export function getDefaultLang() {
     return navigator.language || navigator.userLanguage
   }
   const broswerLang = getBroswerLang().toLowerCase()
-  return window.localStorage.getItem('lang') || LangMaps.get(broswerLang) || 'zh'
+
+  return storage.get('lang') || LangMaps.get(broswerLang) || 'zh'
 }

@@ -1,4 +1,4 @@
-import { wMessageConfirm, wMessage } from './message'
+import { wMessageConfirm, wMessage } from '@/utils/message'
 
 /**
  * 获取接口请求最后一次的执行结果

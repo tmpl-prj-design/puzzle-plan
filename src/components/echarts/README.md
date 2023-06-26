@@ -64,7 +64,8 @@ lineChartData = [
 customOptions={
   // 特殊配置
   _title: 'Pie Chart', 
-  _colors: { a: 'red', b: 'yellow', c: 'blue', d: 'black' }
+  _colors: { a: 'red', b: 'yellow', c: 'blue', d: 'black' },
+  _params: { tooltipFormatType: 'number' }
 
   // 常规配置
   legend: {
@@ -78,6 +79,7 @@ customOptions={
 - _colors: 图表数据项自定义颜色，需配合数据中的key使用。如：```_colors = { a: 'red', b: 'yellow', c: 'blue', d: 'black' }```
 - _area: 【折线图】是否使用区域
 - _area_colors: 【折线图】区域自定义颜色，格式参考_colors
+- _params.tooltipFormatType 设置tooltip的格式化规则
 
 
 #### 饼图/环图
@@ -116,4 +118,3 @@ lineChartData = [
 - name: 数据项名称，必传，图表会根据name设置，自动生成legend
 - key: 非必传。当使用自定义颜色等配置时，必传，需要根据key找到对应的颜色
 - data: 数据项值，必传。二维数组组成，第一个值为横坐标，第二个值为纵坐标值
-
